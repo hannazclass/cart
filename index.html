@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>장바구니</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/cart.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="js/cart.js"></script>
+</head>
+<body>
+  <article class="item">
+    <ul class="row">
+      <!-- <li data-key="product1">
+        <div class="wrap">
+          <img src="img/friends_ryan.jpg" alt="">
+          <div class="box">
+            <h2>라이언</h2>
+            <span class="price">30000</span>            
+            <div class="btn-group">
+              <button class="fas fa-heart"></button>
+              <button class="fas fa-shopping-cart"></button>
+            </div>
+          </div>
+        </div>
+      </li> -->
+    </ul>
+  </article>
+
+  <div class="popup">
+    <ul class="tab-nav">
+      <li><a href="#like" class="active">위시리스트</a></li>
+      <li><a href="#shopping">장바구니</a></li>
+    </ul>
+    <div class="tab-contents">
+      <div id="like" class="content" style="display: block;">
+        <div class="top">
+          <label><input type="checkbox" name="like">전체선택</label>
+          <span class="count">0개</span>
+        </div>
+        <ul>
+            <!-- <li data-key="product1">
+                <label><input type="checkbox"></label>
+                <img src="img/friends_ryan.jpg">
+                <div class="box">
+                    <dl>
+                        <dt>라이언</dt>
+                        <dd>30,000원</dd>
+                    </dl>
+                    <button class="btn-del">삭제</button>
+                </div>
+            </li> -->
+        </ul>
+        <div class="bottom">
+          <div class="btn-group">
+            <button class="btn-del">삭제하기</button>
+            <button class="btn-cart">장바구니담기</button>
+          </div>
+        </div>
+      </div>
+      <div id="shopping" class="content">
+        <div class="top">
+          <label><input type="checkbox" name="shopping">전체선택</label>
+          <span class="count">0개</span>
+        </div>
+        <ul>
+            <!-- <li data-key="product1">
+                <label><input type="checkbox"></label>
+                <img src="img/friends_ryan.jpg">
+                <div class="box">
+                    <dl>
+                        <dt>라이언</dt>
+                        <dd>30,000원</dd>
+                    </dl>
+                    <div class="count-change">
+                        <button class="down">-</button>
+                        <span>1</span>              
+                        <button class="up">+</button>
+                    </div>
+                    <button class="btn-del">삭제</button>
+                </div>
+            </li> -->
+        </ul>
+        <div class="bottom">
+          <div class="total">
+            합계<span class="price">0원</span>
+          </div>
+          <div class="btn-group">
+            <button class="btn-del">삭제하기</button>
+            <button class="btn-order">주문하기</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+</body>
+</html>
