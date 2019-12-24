@@ -264,6 +264,7 @@ $(function(){
             if($(this).prop('checked')){
                 checkCount++;
                 var key=$(this).parents('li').data('key');
+                var choice=choiceItem(key);
                 $('.item li').each(function(){
                     //$(this) => .item li
                     //팝업창 안에 있는 체크된 리스트의 키값과 상품목록(.item)에 있는 리스트의 키값이 일치할 경우
@@ -271,14 +272,17 @@ $(function(){
                         if(contentsName=='like'){
                             $(this).find('.fa-heart').removeClass('on');
                             likeCount--;
+                            choice.like="";
                         }else{
                             $(this).find('.fa-shopping-cart').removeClass('on');
                             shoppingCount--;
+                             choice.shopping="";
                         }
                     }
                 })
                 // 체크되어진 리스트 삭제
                 $(this).parents('li').remove();
+                cartChange(choice);
             }
         })
         if(checkCount==0){
